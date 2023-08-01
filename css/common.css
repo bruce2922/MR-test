@@ -1,0 +1,23 @@
+
+.slim-line{
+  border-top: 1px solid #CCCCCC;
+  transform: scaleY(0.2);
+}
+
+.required-star{
+  color:#C90000;
+}
+
+.unselect{
+  border-color: #CCCCCC;
+  color: #CCCCCC;
+}
+
+.selected{
+  border-color: #222222;
+  color: #222222;
+}
+
+.font-bold{
+  font-weight: bold;
+}
