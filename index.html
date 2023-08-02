@@ -13,11 +13,6 @@
   <link href="css/responsive.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/currencyformatter.js/2.2.0/currencyFormatter.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.1/mustache.min.js"></script>
-  <script src="./js/third-party/jquery.html5storage.min.js"></script>
 </head>
 
 <body>
@@ -57,22 +52,28 @@
   </div>
 </div>
 <div id="cart" class="cart" style="display:none"></div>
-
 <script id="item-list-template" type="text/html">
   {{#items}}
-    <div class="p-image">
-      <img src="{{imgUrl}}" alt="product-image"/>
-    </div>
-    <div class="p-info">
-      <div class="i-name">{{name}}</div>
-      <div class="i-price">{{amount}}x <span class="font-bold">{{price}}</span></div>
-      <div class="i-size">Size:{{size}}</div>
-    </div>
+  <div class="p-image">
+    <img src="{{imgUrl}}" alt="product-image"/>
+  </div>
+  <div class="p-info">
+    <div class="i-name">{{name}}</div>
+    <div class="i-price">{{amount}}x <span class="font-bold">{{price}}</span></div>
+    <div class="i-size">Size:{{size}}</div>
+  </div>
   {{/items}}
   <div class="clear-btn">
     <button onclick="clearCart();">clear</button>
   </div>
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/currencyformatter.js/2.2.0/currencyFormatter.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.1/mustache.min.js"></script>
+
+<script src="./js/third-party/jquery.html5storage.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/cart.js"></script>
 
